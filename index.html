@@ -1,1 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <style>
+        .flicker-effect {
+            animation: flicker 3s infinite;
+        }
+        
+        @keyframes flicker {
+            0% { opacity: 1; }
+            50% { opacity: 0.3; }
+            100% { opacity: 1; }
+        }
 
+        body {
+            background-color: #1c1e26;
+            color: #ddd;
+            font-family: 'Courier New', monospace;
+        }
+        
+        .icon-style {
+            margin-right: 10px;
+        }
+
+        .container {
+            margin: 2em;
+            line-height: 1.6;
+        }
+
+        h2, h4 {
+            border-bottom: 1px dashed #555;
+        }
+
+        a {
+            color: #1e90ff;
+            text-decoration: none;
+        }
+
+        a:hover {
+            color: #00bfff;
+        }
+
+        .btn {
+            padding: 10px 20px;
+            background-color: #00bfff;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .btn:hover {
+            background-color: #1e90ff;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>About Me</h2>
+        <h4>Languages I Know</h4>
+        <p><i class="icon-style fas fa-code"></i>Python</p>
+        <p><i class="icon-style fas fa-code"></i>JavaScript</p>
+        <p><i class="icon-style fas fa-code"></i>HTML/CSS</p>
+        <p><i class="icon-style fas fa-code"></i>C+</p>
+
+        <h4>What I Do</h4>
+        <p>Right now i just chill and code random stuff</p>
+
+        <h4>What I'm Learning</h4>
+        <p class="flicker-effect">I'm currently learning java and Go.</p>
+
+        <h4>My Discord Servers</h4>
+        <p><a href="None" class="btn"><i class="fas fa-cloud"></i>None</a></p>
+
+        <h4>Projects</h4>
+        <p>i dont Currently develope anything but i did develope a social media app.</p>
+    </div>
+</body>
+</html>
